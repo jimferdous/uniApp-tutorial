@@ -3,3 +3,10 @@
         <h3 class='center-align'> Sign up! </h3>
     </div>
 </div>
+
+<%= form_for @student do |f| %>
+<%= f.label :name %>
+<% f.text_field :name %>
+
+
+<% end %>
