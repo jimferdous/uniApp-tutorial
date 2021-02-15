@@ -4,14 +4,24 @@
     </div>
 </div>
 
-<%= form_for @student do |f| %>
-<%= f.label :name %>
-<% f.text_field :name %>
+<div class="row">
+    <%= form_for(@student, html: {class: "col s12"}) do |f| %>
+    <div class="row">
+        <div class="input-field col s12">
+    <%= f.text_field :name%>
+    <%= f.label :name %>
+        </div>
+    </div>
 
-<%= f.label :email %>
-<%= f.email_field :email %>
+    <div class="row">
+        <div class="input-field col s12">
 
-<%= f.submit "Submit" %>
+        <%= f.email_field :email %>
+        <%= f.label :email %> 
+            </div>
+        </div>
+    <%= f.submit "Submit" %>
 
 
-<% end %>
+    <% end %>
+</div>
