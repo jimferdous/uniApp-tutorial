@@ -8,7 +8,9 @@ class StudentsController < ApplicationController
     end
 
     def create
-        
+        @student = Student.new(student_params)
     end
+
+    private
     
 end
