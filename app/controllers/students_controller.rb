@@ -15,6 +15,7 @@ class StudentsController < ApplicationController
         else
             render "new"
     end
+end
 
     private
 
@@ -22,4 +23,4 @@ class StudentsController < ApplicationController
         params.require(:student).permit(:name, :email)
     end
     
-end
+end 
