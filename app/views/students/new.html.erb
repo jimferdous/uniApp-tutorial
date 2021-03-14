@@ -1,5 +1,7 @@
 <%if @student.errors.any? %>
 <div class="container">
+    <div class="row sign-up-form">
+        <div class="col s12 m12 l12">
 <%= pluralize(@student.errors.count, "error") %>
     prohibited your profile from being saved
     <ul>
