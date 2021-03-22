@@ -26,4 +26,5 @@ require("jquery");
 $(document).on("turbolinks:load", function () {
   $(".sidenav").sidenav();
   $(".dropdown-trigger").dropdown();
+  $("#fade-out-target");
 });
