@@ -21,6 +21,10 @@ class StudentsController < ApplicationController
     end
 end
 
+def edit
+    
+end
+
     private
 
     def student_params
