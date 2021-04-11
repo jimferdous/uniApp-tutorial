@@ -26,6 +26,7 @@ def edit
 end
 
 def update
+    @student = Student.find(params[:id])
 end
 
     private
