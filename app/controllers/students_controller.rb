@@ -29,6 +29,7 @@ def update
     @student = Student.find(params[:id])
     if @student.update(student_params)
         flash[:notice] = "You have successfully updated your profile"
+        redirect_to student_path(@student)
     else 
         render 'edit'
     end
