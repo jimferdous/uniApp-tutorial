@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about' #get 'about' request and send it to the pages controller about action
   resources :students, except: [:destroy]
   get 'login', to: 'logins#new'
+  post 'login', to: 'logins#create'
 end
