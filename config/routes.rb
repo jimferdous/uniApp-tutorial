@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'courses/new', to: 'courses#new'
   get 'about', to: 'pages#about' #get 'about' request and send it to the pages controller about action
   resources :students, except: [:destroy]
+  get 'login', to: 'logins#new'
 end
