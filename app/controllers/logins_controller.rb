@@ -7,10 +7,12 @@ class LoginsController < ApplicationController
     def create
         student = Student.find_by(email: params[:logins][:email].downcase)
         if student && student.authenticate(params[:logins][:password])
-
+            flash[:notice] = "You have successfully logged in"
+            redirect_to student
         else
-            flash[:notice] = "Something was wrong with your login information"    
-
+            flash.now[:notice] = "Something was wrong with your login information"    
+            render 'new'
+        end
     end
 
     def destroy
