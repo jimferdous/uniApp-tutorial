@@ -5,7 +5,7 @@ class LoginsController < ApplicationController
     end
 
     def create
-
+        student = Student.find_by(email: params[:logins][:email].downcase)
     end
 
     def destroy
