@@ -17,7 +17,7 @@ class LoginsController < ApplicationController
     end
 
     def destroy
-
+        session[:student_id] = nil
     end
 
 end
