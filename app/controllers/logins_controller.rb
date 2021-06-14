@@ -18,6 +18,7 @@ class LoginsController < ApplicationController
 
     def destroy
         session[:student_id] = nil
+        flash[:notice] = "You have successfully logged out"
     end
 
 end
