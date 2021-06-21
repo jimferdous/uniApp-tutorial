@@ -3,8 +3,8 @@
         <% if (logged_in?) %>
           <li><%= link_to "login", logout_path, method: :delete %></li>
         <% else %>
-          
-        <%end%>
+          <li> <%= link_to "login", login_path %> </li>
+        <% end %>
         <li><a href="#!">two</a></li>
         <li class="divider"></li>
         <li><a href="#!">three</a></li>
