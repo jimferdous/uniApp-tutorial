@@ -1,6 +1,7 @@
   <header>
         <ul id="dropdown1" class="dropdown-content">
-        <li><%= link_to "login", login_path%></li>
+        <% if (logged_in?) %>
+        <li><%= link_to "login", login_path %></li>
         <li><a href="#!">two</a></li>
         <li class="divider"></li>
         <li><a href="#!">three</a></li>
