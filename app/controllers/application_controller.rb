@@ -11,4 +11,10 @@ protect_from_forgery with: :exception
         !!current_user
     end
 
+    def require_user
+        if !logged_in?
+            flash[:notice] = "You must be logged in to perform that action"
+        end
+    end
+
 end
